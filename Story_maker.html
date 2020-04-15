@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Story Maker</title>
+</head>
+
+<body>
+    <h1>Story Maker</h1>
+
+    Noun: <input type="text" id="noun" size="20" name="noun"><br>
+    Adjective: <input type="text" id="adjective" size="20" name="adjective"><br>
+    Someone's Name: <input type="text" id="name" size="20" name="name"><br><br>
+    <button type="button" onclick="myFunction()">
+        Make Story
+    </button>
+
+    <div id="story"></div>
+    <script type="text/javascript">
+        //Javascript program to provide
+        //a greeting to the user based off of what time it is
+
+        //Makes a function that runs when you hit the "Make Story Button"
+        function myFunction() {
+
+            //Sets the variable for noun based off what the user inputs in the noun text box
+            var noun = document.getElementById("noun").value;
+            //Sets the variable for adjective based off what the user inputs in the adjective text box
+            var adjective = document.getElementById("adjective").value;
+            //Sets the variable for name based off what the user inputs in the name text box
+            var name = document.getElementById("name").value;
+
+
+            //Displays the final story
+            document.getElementById("story").innerHTML = noun + " likes a(n) " + adjective + " " + name + ".";
+        }
+
+    </script>
+
+</body>
+</html>
